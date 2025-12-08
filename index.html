@@ -79,22 +79,20 @@
                                 </picture>
                                 <meta itemprop="name" content="Dexdbell" />
                             </a>
-                            <!-- ПЕРЕДЕЛАТЬ НА СКРОЛ К СЕКЦИЯМ -->
                             <nav class="nav">
                                 <ul class="nav__list">
                                     <li class="nav__item" itemscope itemtype="https://schema.org/Article">
-                                        <a href="/concerts" class="nav__link link" itemprop="url">Концерты</a>
+                                        <a href="#concerts" class="nav__link" itemprop="url">Концерты</a>
                                     </li>
                                     <li class="nav__item" itemscope itemtype="https://schema.org/Article">
-                                        <a href="/music" class="nav__link link" itemprop="url">Музыка</a>
+                                        <a href="#music" class="nav__link" itemprop="url">Музыка</a>
                                     </li>
                                     <li class="nav__item" itemscope itemtype="https://schema.org/Article">
-                                        <a href="/info" class="nav__link link" itemprop="url">Информация</a>
+                                        <a href="#info" class="nav__link" itemprop="url">Информация</a>
                                     </li>
                                 </ul>
                             </nav>
-                            <!-- Сделать скрол к секции с билетами -->
-                            <button class="button button_size"><a href="/concerts#concerts-list" class="button__link">Купить билет</a></button>
+                            <a href="https://craftcore.timepad.ru" class="link-ticket">Купить билет</a>
                         </div>
                     </div>
                 </div>
@@ -105,13 +103,13 @@
             <section class="margin-bottom">
                 <div class="main-bg__wrapper">
                     <picture>
-                        <source media="(max-width: 600px)" srcset="./img/main-bg-mobile.jpg" />
-                        <img src="./img/main-bg-2.jpg" alt="Главный баннер группы Dexdbel" />
+                        <source media="(max-width: 768px)" srcset="./img/main-bg-mob-2.jpg" />
+                        <img src="./img/main-bg.jpg" class="concerts__img" alt="Фото артистов" />
                     </picture>
                 </div>
             </section>
 
-            <section class="tour margin-bottom">
+            <section class="tour margin-bottom" id="concerts">
                 <div class="wrapper">
                     <h2>Весенний тур 2026</h2>
                     <div class="tour__list">
@@ -130,7 +128,7 @@
                                 <a href="https://vk.com/dxb_msk26" class="tour__link-social">
                                     <img src="./img/icons/icon-vk-2.png" alt="Иконка ВКонтакте" />
                                 </a>
-                                <a href="#" class="tour__ticket">Купить билет</a>
+                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket">Купить билет</a>
                             </div>
                         </div>
 
@@ -149,7 +147,7 @@
                                 <a href="https://vk.com/dxb_spb26" class="tour__link-social">
                                     <img src="./img/icons/icon-vk-2.png" alt="Иконка ВКонтакте" />
                                 </a>
-                                <a href="#" class="tour__ticket">Купить билет</a>
+                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket">Купить билет</a>
                             </div>
                         </div>
 
@@ -168,7 +166,7 @@
                                 <a href="https://vk.com/dxb_ekb26" class="tour__link-social">
                                     <img src="./img/icons/icon-vk-2.png" alt="Иконка ВКонтакте" />
                                 </a>
-                                <a href="#" class="tour__ticket">Купить билет</a>
+                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket">Купить билет</a>
                             </div>
                         </div>
 
@@ -187,14 +185,14 @@
                                 <a href="https://vk.com/dxb_nsk26" class="tour__link-social">
                                     <img src="./img/icons/icon-vk-2.png" alt="Иконка ВКонтакте" />
                                 </a>
-                                <a href="#" class="tour__ticket">Купить билет</a>
+                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket">Купить билет</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="music-links margin-bottom" itemscope itemtype="https://schema.org/MusicGroup">
+            <section class="music-links margin-bottom" itemscope itemtype="https://schema.org/MusicGroup" id="music">
                 <meta itemprop="name" content="Dexdbell" /><meta itemprop="url" content="https://band.link/Dexdbell" />
                 <div class="music-links__wrapper wrapper">
                     <h2>LISTEN MUSIC</h2>
@@ -239,7 +237,7 @@
                 </div>
             </section>
 
-            <section class="socials-links margin-bottom" itemscope itemtype="https://schema.org/SocialMediaPosting">
+            <section class="socials-links margin-bottom" itemscope itemtype="https://schema.org/SocialMediaPosting" id="info">
                 <h2>DEXDBELL LINKS</h2>
                 <div class="socials-links__wrapper wrapper">
                     <div class="socials-links__blocks-socials">
@@ -288,24 +286,31 @@
                     <h2>BOOKING</h2>
                     <div class="booking__blocks">
                         <div class="booking__links">
-                            <a href="https://t.me/dropdread" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="url"
-                                ><picture
+                            <a href="https://t.me/dropdread" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="url">
+                                <picture
                                     ><source srcset="./img/icons/icon-tg-info.webp" type="image/webp" />
-                                    <img src="./img/icons/icon-tg-info.png" class="booking__icon-link" alt="Иконка Telegram" /></picture></a
-                            ><a href="https://vk.com/craftcore_records" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="url"
-                                ><picture
+                                    <img src="./img/icons/icon-tg-info.png" class="booking__icon-link" alt="Иконка Telegram" />
+                                </picture>
+                            </a>
+                            <a href="https://vk.com/craftcore_records" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="url">
+                                <picture
                                     ><source srcset="./img/icons/icon-vk-info.webp" type="image/webp" />
-                                    <img src="./img/icons/icon-vk-info.png" class="booking__icon-link" alt="Иконка ВКонтакте" /></picture></a
-                            ><a href="mailto:dexdbell.band@gmail.com" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="email"
-                                ><picture
+                                    <img src="./img/icons/icon-vk-info.png" class="booking__icon-link" alt="Иконка ВКонтакте" />
+                                </picture>
+                            </a>
+                            <a href="mailto:dexdbell.band@gmail.com" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="email">
+                                <picture
                                     ><source srcset="./img/icons/icon-email-info.webp" type="image/webp" />
-                                    <img src="./img/icons/icon-email-info.png" class="booking__icon-link" alt="Иконка почты" /></picture
-                            ></a>
+                                    <img src="./img/icons/icon-email-info.png" class="booking__icon-link" alt="Иконка почты" />
+                                </picture>
+                            </a>
                         </div>
                         <a href="mailto:craftcorestudio@gmail.com" class="booking__email" itemprop="email">craftcorestudio@gmail.com</a>
                     </div>
                 </div>
             </section>
+
+            <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
         </main>
 
         <footer class="footer" itemscope itemtype="https://schema.org/Organization">
