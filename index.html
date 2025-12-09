@@ -4,12 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="DEXDBELL — metal/deathcore, phonk metal и sport metal. Платиновый трек GYMDOWN, трек DOTA, музыка для качалки, геймеров и бойцов TOP DOG. Концерты, билеты, официальный мерч." />
+        <meta name="keywords" content="DEXDBELL, phonk metal, sport metal, gym metal, GYMDOWN, DOTA, metalcore, deathcore, horror metal, trap metal, музыка для качалки, музыка для тренировок, музыка для геймеров, музыка для бойцов, TOP DOG, metal концерты, купить билеты, мерч metal группы" />
+
         <title>DEXDBELL</title>
 
         <link rel="preload" href="./fonts/DrukCyr-Medium.woff" as="font" crossorigin="anonymous" />
         <link rel="preload" href="./fonts/DrukCyr-Medium.woff2" as="font" crossorigin="anonymous" />
         <link rel="stylesheet" href="./styles/reset.css" />
-        <link rel="stylesheet" href="./styles/styles-2.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
 
         <link type="image/x-icon" rel="shortcut icon" href="./img/favicon/favicon.ico" />
         <link type="image/png" sizes="16x16" rel="icon" href="./img/favicon/favicon-16x16.png" />
@@ -63,37 +66,35 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__line-container">
-                <div class="header__wrapper wrapper">
-                    <button class="burger" aria-label="Меню">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <div class="header__nav-wrapper">
-                        <div class="header__menu-wrap">
-                            <a href="/" class="header__logo-wrap" itemscope itemtype="https://schema.org/Organization">
-                                <picture>
-                                    <source srcset="./img/logo.webp" type="image/webp" />
-                                    <img src="./img/logo.png" class="header__logo" alt="Логотип Dexdbell" itemprop="logo" />
-                                </picture>
-                                <meta itemprop="name" content="Dexdbell" />
-                            </a>
-                            <nav class="nav">
-                                <ul class="nav__list">
-                                    <li class="nav__item" itemscope itemtype="https://schema.org/Article">
-                                        <a href="#concerts" class="nav__link" itemprop="url">Концерты</a>
-                                    </li>
-                                    <li class="nav__item" itemscope itemtype="https://schema.org/Article">
-                                        <a href="#music" class="nav__link" itemprop="url">Музыка</a>
-                                    </li>
-                                    <li class="nav__item" itemscope itemtype="https://schema.org/Article">
-                                        <a href="#info" class="nav__link" itemprop="url">Информация</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <a href="https://craftcore.timepad.ru" class="link-ticket">Купить билет</a>
-                        </div>
+            <div class="header__wrapper wrapper">
+                <button class="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="header__nav-wrapper">
+                    <div class="header__menu-wrap">
+                        <a href="/" class="header__logo-wrap" itemscope itemtype="https://schema.org/Organization">
+                            <picture>
+                                <source srcset="./img/logo.webp" type="image/webp" />
+                                <img src="./img/logo.png" class="header__logo" alt="Логотип Dexdbell" itemprop="logo" />
+                            </picture>
+                            <meta itemprop="name" content="Dexdbell" />
+                        </a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li itemscope itemtype="https://schema.org/Article">
+                                    <a href="#concerts" class="nav__link" itemprop="url">Концерты</a>
+                                </li>
+                                <li itemscope itemtype="https://schema.org/Article">
+                                    <a href="#music" class="nav__link" itemprop="url">Музыка</a>
+                                </li>
+                                <li itemscope itemtype="https://schema.org/Article">
+                                    <a href="#info" class="nav__link" itemprop="url">Информация</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="https://craftcore.timepad.ru" class="link-ticket">Купить билет</a>
                     </div>
                 </div>
             </div>
@@ -101,10 +102,10 @@
         <main>
             <h1 class="visually-hidden">Группа Dexdbell</h1>
             <section class="margin-bottom">
-                <div class="main-bg__wrapper">
+                <div>
                     <picture>
                         <source media="(max-width: 768px)" srcset="./img/main-bg-mob-2.jpg" />
-                        <img src="./img/main-bg.jpg" class="concerts__img" alt="Фото артистов" />
+                        <img src="./img/main-bg.jpg" alt="Фото артистов" />
                     </picture>
                 </div>
             </section>
@@ -113,88 +114,124 @@
                 <div class="wrapper">
                     <h2>Весенний тур 2026</h2>
                     <div class="tour__list">
-                        <div class="tour__item">
+                        <div class="tour__item" itemscope itemtype="https://schema.org/MusicEvent">
+                            <meta itemprop="name" content="Весенний тур 2026 — Москва" />
+                            <meta itemprop="startDate" content="2026-02-27T20:00" />
                             <div class="tour__block">
                                 <div class="tour__date-wrap">
                                     <span class="tour__date">27</span>
                                     <span class="tour__month">ФЕВ</span>
                                 </div>
                                 <div class="tour__place">
-                                    <span class="tour__city">МОСКВА</span>
-                                    <span class="tour__club">Клуб «СВОБОДА»</span>
+                                    <span class="tour__city" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                                        <meta itemprop="name" content="Москва" />
+                                        <span>МОСКВА</span>
+                                    </span>
+                                    <span class="tour__club" itemprop="name" content="Клуб «СВОБОДА»">Клуб «СВОБОДА»</span>
                                 </div>
                             </div>
                             <div class="tour__block">
                                 <a href="https://vk.com/dxb_msk26" class="tour__link-social">
                                     <img src="./img/icons/icon-vk-2.png" alt="Иконка ВКонтакте" />
                                 </a>
-                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket">Купить билет</a>
+                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket" itemprop="url">Купить билет</a>
+                                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="RUB" />
+                                    <meta itemprop="availability" content="https://schema.org/InStock" />
+                                </div>
                             </div>
                         </div>
 
-                        <div class="tour__item">
+                        <div class="tour__item" itemscope itemtype="https://schema.org/MusicEvent">
+                            <meta itemprop="name" content="Весенний тур 2026 — Санкт-Петербург" />
+                            <meta itemprop="startDate" content="2026-03-01T20:00" />
                             <div class="tour__block">
                                 <div class="tour__date-wrap">
                                     <span class="tour__date">01</span>
                                     <span class="tour__month">МАР</span>
                                 </div>
                                 <div class="tour__place">
-                                    <span class="tour__city">САНКТ-ПЕТЕРБУРГ</span>
-                                    <span class="tour__club">Клуб «РАССВЕТ»</span>
+                                    <span class="tour__city" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                                        <meta itemprop="name" content="Санкт-Петербург" />
+                                        <span>САНКТ-ПЕТЕРБУРГ</span>
+                                    </span>
+                                    <span class="tour__club" itemprop="name" content="Клуб «РАССВЕТ»">Клуб «РАССВЕТ»</span>
                                 </div>
                             </div>
                             <div class="tour__block">
                                 <a href="https://vk.com/dxb_spb26" class="tour__link-social">
                                     <img src="./img/icons/icon-vk-2.png" alt="Иконка ВКонтакте" />
                                 </a>
-                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket">Купить билет</a>
+                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket" itemprop="url">Купить билет</a>
+                                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="RUB" />
+                                    <meta itemprop="availability" content="https://schema.org/InStock" />
+                                </div>
                             </div>
                         </div>
 
-                        <div class="tour__item">
+                        <div class="tour__item" itemscope itemtype="https://schema.org/MusicEvent">
+                            <meta itemprop="name" content="Весенний тур 2026 — Екатеринбург" />
+                            <meta itemprop="startDate" content="2026-03-06T20:00" />
                             <div class="tour__block">
                                 <div class="tour__date-wrap">
                                     <span class="tour__date">06</span>
                                     <span class="tour__month">МАР</span>
                                 </div>
                                 <div class="tour__place">
-                                    <span class="tour__city">ЕКАТЕРИНБУРГ</span>
-                                    <span class="tour__club">Пространство «Ц»</span>
+                                    <span class="tour__city" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                                        <meta itemprop="name" content="Екатеринбург" />
+                                        <span>ЕКАТЕРИНБУРГ</span>
+                                    </span>
+                                    <span class="tour__club" itemprop="name" content="Пространство «Ц»">Пространство «Ц»</span>
                                 </div>
                             </div>
                             <div class="tour__block">
                                 <a href="https://vk.com/dxb_ekb26" class="tour__link-social">
                                     <img src="./img/icons/icon-vk-2.png" alt="Иконка ВКонтакте" />
                                 </a>
-                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket">Купить билет</a>
+                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket" itemprop="url">Купить билет</a>
+                                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="RUB" />
+                                    <meta itemprop="availability" content="https://schema.org/InStock" />
+                                </div>
                             </div>
                         </div>
 
-                        <div class="tour__item">
+                        <div class="tour__item" itemscope itemtype="https://schema.org/MusicEvent">
+                            <meta itemprop="name" content="Весенний тур 2026 — Новосибирск" />
+                            <meta itemprop="startDate" content="2026-03-09T20:00" />
                             <div class="tour__block">
                                 <div class="tour__date-wrap">
                                     <span class="tour__date">09</span>
                                     <span class="tour__month">МАР</span>
                                 </div>
                                 <div class="tour__place">
-                                    <span class="tour__city">НОВОСИБИРСК</span>
-                                    <span class="tour__club">«Цоколь»</span>
+                                    <span class="tour__city" itemprop="location" itemscope itemtype="https://schema.org/Place">
+                                        <meta itemprop="name" content="Новосибирск" />
+                                        <span>НОВОСИБИРСК</span>
+                                    </span>
+                                    <span class="tour__club" itemprop="name" content="«Цоколь»">«Цоколь»</span>
                                 </div>
                             </div>
                             <div class="tour__block">
                                 <a href="https://vk.com/dxb_nsk26" class="tour__link-social">
                                     <img src="./img/icons/icon-vk-2.png" alt="Иконка ВКонтакте" />
                                 </a>
-                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket">Купить билет</a>
+                                <a href="https://craftcore.timepad.ru" class="tour__ticket link-ticket" itemprop="url">Купить билет</a>
+                                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    <meta itemprop="priceCurrency" content="RUB" />
+                                    <meta itemprop="availability" content="https://schema.org/InStock" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="music-links margin-bottom" itemscope itemtype="https://schema.org/MusicGroup" id="music">
+            <section class="info-links margin-bottom" itemscope itemtype="https://schema.org/MusicGroup" id="music">
                 <meta itemprop="name" content="Dexdbell" /><meta itemprop="url" content="https://band.link/Dexdbell" />
-                <div class="music-links__wrapper wrapper">
+                <div class="wrapper">
                     <h2>LISTEN MUSIC</h2>
                     <div class="info-links__blocks-music">
                         <a href="https://music.yandex.ru/artist/21015856" class="info-links__music" itemprop="sameAs" target="_blank" rel="noopener noreferrer">
@@ -239,68 +276,72 @@
 
             <section class="socials-links margin-bottom" itemscope itemtype="https://schema.org/SocialMediaPosting" id="info">
                 <h2>DEXDBELL LINKS</h2>
-                <div class="socials-links__wrapper wrapper">
+                <div class="wrapper">
                     <div class="socials-links__blocks-socials">
                         <a href="https://t.me/dexdbell" class="socials-links__social" target="_blank" rel="noopener noreferrer" itemprop="url">
                             <picture>
                                 <source srcset="./img/icons/icon-tg.webp" type="image/webp" />
-                                <img src="./img/icons/icon-tg.png" class="socials-links__img-icon" alt="Иконка Телеграм" itemprop="image" />
+                                <img src="./img/icons/icon-tg.png" alt="Иконка Телеграм" itemprop="image" />
                             </picture>
-                            <meta itemprop="name" content="Телеграм" /><meta itemprop="description" content="Ссылка на канал в Telegram" />
+                            <meta itemprop="name" content="Телеграм" />
+                            <meta itemprop="description" content="Ссылка на канал в Telegram" />
                         </a>
                         <a href="https://vk.com/dexdbell" class="socials-links__social" target="_blank" rel="noopener noreferrer" itemprop="url">
                             <picture>
                                 <source srcset="./img/icons/icon-vk.webp" type="image/webp" />
-                                <img src="./img/icons/icon-vk.png" class="socials-links__img-icon" alt="Иконка ВКонтакте" itemprop="image" />
+                                <img src="./img/icons/icon-vk.png" alt="Иконка ВКонтакте" itemprop="image" />
                             </picture>
-                            <meta itemprop="name" content="ВКонтакте" /><meta itemprop="description" content="Ссылка на страницу в ВКонтакте" />
+                            <meta itemprop="name" content="ВКонтакте" />
+                            <meta itemprop="description" content="Ссылка на страницу в ВКонтакте" />
                         </a>
                         <a href="https://www.youtube.com/@DEXDBELL" class="socials-links__social" target="_blank" rel="noopener noreferrer" itemprop="url">
                             <picture>
                                 <source srcset="./img/icons/icon-yt.webp" type="image/webp" />
-                                <img src="./img/icons/icon-yt.png" class="socials-links__img-icon" alt="Иконка YouTube" itemprop="image" />
+                                <img src="./img/icons/icon-yt.png" alt="Иконка YouTube" itemprop="image" />
                             </picture>
-                            <meta itemprop="name" content="YouTube" /><meta itemprop="description" content="Ссылка на канал YouTube" />
+                            <meta itemprop="name" content="YouTube" />
+                            <meta itemprop="description" content="Ссылка на канал YouTube" />
                         </a>
                         <a href="https://www.instagram.com/dexdbell.band" class="socials-links__social" target="_blank" rel="noopener noreferrer" itemprop="url">
                             <picture>
                                 <source srcset="./img/icons/icon-ig.webp" type="image/webp" />
-                                <img src="./img/icons/icon-ig.png" class="socials-links__img-icon" alt="Иконка Инстаграм" itemprop="image" />
+                                <img src="./img/icons/icon-ig.png" alt="Иконка Инстаграм" itemprop="image" />
                             </picture>
-                            <meta itemprop="name" content="Инстаграм" /><meta itemprop="description" content="Ссылка на профиль в Instagram" />
+                            <meta itemprop="name" content="Инстаграм" />
+                            <meta itemprop="description" content="Ссылка на профиль в Instagram" />
                         </a>
                         <a href="mailto:dexdbell.band@gmail.com" class="socials-links__social" target="_blank" itemprop="url">
                             <picture>
                                 <source srcset="./img/icons/icon-email.webp" type="image/webp" />
-                                <img src="./img/icons/icon-email.png" class="socials-links__img-icon" alt="Иконка Электронной почты" itemprop="image" />
+                                <img src="./img/icons/icon-email.png" alt="Иконка Электронной почты" itemprop="image" />
                             </picture>
-                            <meta itemprop="name" content="Электронная почта" /><meta itemprop="description" content="Ссылка на почту для связи" />
+                            <meta itemprop="name" content="Электронная почта" />
+                            <meta itemprop="description" content="Ссылка на почту для связи" />
                         </a>
                     </div>
                 </div>
             </section>
 
             <section class="booking margin-bottom" itemscope itemtype="https://schema.org/Organization">
-                <h2 class="booking__title visually-hidden">Забронировать концерт</h2>
                 <div class="booking__wrapper">
                     <h2>BOOKING</h2>
                     <div class="booking__blocks">
                         <div class="booking__links">
                             <a href="https://t.me/dropdread" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="url">
-                                <picture
-                                    ><source srcset="./img/icons/icon-tg-info.webp" type="image/webp" />
+                                <picture>
+                                    <source srcset="./img/icons/icon-tg-info.webp" type="image/webp" />
                                     <img src="./img/icons/icon-tg-info.png" class="booking__icon-link" alt="Иконка Telegram" />
                                 </picture>
                             </a>
                             <a href="https://vk.com/craftcore_records" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="url">
-                                <picture
-                                    ><source srcset="./img/icons/icon-vk-info.webp" type="image/webp" />
+                                <picture>
+                                    <source srcset="./img/icons/icon-vk-info.webp" type="image/webp" />
                                     <img src="./img/icons/icon-vk-info.png" class="booking__icon-link" alt="Иконка ВКонтакте" />
                                 </picture>
                             </a>
                             <a href="mailto:dexdbell.band@gmail.com" class="booking__link" target="_blank" rel="noopener noreferrer" itemprop="email">
-                                <picture
-                                    ><source srcset="./img/icons/icon-email-info.webp" type="image/webp" />
+                                <picture>
+                                    <source srcset="./img/icons/icon-email-info.webp" type="image/webp" />
                                     <img src="./img/icons/icon-email-info.png" class="booking__icon-link" alt="Иконка почты" />
                                 </picture>
                             </a>
@@ -315,14 +356,17 @@
 
         <footer class="footer" itemscope itemtype="https://schema.org/Organization">
             <div class="footer__wrapper wrapper">
-                <div class="footer__logo-wrap">
-                    <picture>
-                        <source srcset="./img/logo.webp" type="image/webp" />
-                        <img src="./img/logo.png" class="footer__logo-img" alt="Логотип" itemprop="logo" />
-                    </picture>
-                </div>
-                <div class="footer__contacts">
+                <div class="footer__content-block">
+                    <div class="footer__logo-wrap">
+                        <picture>
+                            <source srcset="./img/logo.webp" type="image/webp" />
+                            <img src="./img/logo.png" class="footer__logo-img" alt="Логотип" itemprop="logo" />
+                        </picture>
+                    </div>
                     <div class="footer__email-block"><span class="footer__title">Почта:</span> <a href="mailto:dexdbell.band@gmail.com" class="footer__email-link" itemprop="email">dexdbell.band@gmail.com</a></div>
+                </div>
+
+                <div class="footer__contacts">
                     <p class="footer__text">*Instagram — принадлежит американской компании Meta, которую признали экстремистской, запрещён на территории РФ</p>
                 </div>
             </div>

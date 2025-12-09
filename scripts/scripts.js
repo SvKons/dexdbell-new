@@ -22,48 +22,8 @@ const nav = () => {
             burger.classList.remove('open');
         }
     });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const currentPath = window.location.pathname;
-        const currentPage = currentPath === '/' ? '/' : '/' + currentPath.split('/').filter(Boolean).pop();
-        const navLinks = document.querySelectorAll('.nav__link');
-
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('link_active');
-            }
-        });
-    });
 };
 nav();
-
-const tabs = () => {
-    const buttons = document.querySelectorAll('.tabs__button');
-    const panels = document.querySelectorAll('.tabs__panel');
-
-    if (buttons.length === 0 || panels.length === 0) {
-        console.warn('Tabs: элементы не найдены');
-        return;
-    }
-
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            buttons.forEach(btn => btn.classList.remove('tabs__button_active'));
-            button.classList.add('tabs__button_active');
-
-            panels.forEach(panel => panel.classList.remove('tabs__panel_active'));
-
-            const targetPanel = document.getElementById(button.dataset.tab);
-
-            if (targetPanel) {
-                targetPanel.classList.add('tabs__panel_active');
-            } else {
-                console.error(`Панель с id="${button.dataset.tab}" не найдена`);
-            }
-        });
-    });
-};
-tabs();
 
 const scrollArrow = () => {
     const scrollToTopButton = document.querySelector('.scroll-to-top');
